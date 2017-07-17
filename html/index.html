@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title>###productName###</title>
+	<link rel="stylesheet" href="../src/css/index-page.css">
+</head>
+<body>
+<div class="container-wrap">
+    @@include('title.html')
+    <div class="main-product" id="mainProduct">
+        <div class="slider">
+            <img src="../src/images/6.png" alt="">
+        </div>
+        @@include('promise.html',{
+            "promise1" : "七天无理由退换货",
+            "promise2" : "货到付款",
+            "promise3" : "正品保障",
+            "promise4" : "在线支付"
+        })
+        <div class="price">
+            <span class="orange discount-line"><i class="currency-price"></i><i id="showUnitPrice"></i> </span>
+            <span class="oriPrice-line"><i class="name">原價：</i> <span style="text-decoration: line-through;"><i class="currency-price"></i><i class="oriPrice" id="oriPrice"></i></span></span><span class="tag">特價</span><span class="tag">促銷</span>
+        </div>
+        <div class="hasSold">
+            已搶購6882件 <img src="../src/images/process.gif" alt=""> <span class="red">90%</span>
+        </div>
+        <div class="count-down clearfix" id="countDown">
+            <span class="black-tag">限時搶購</span>
+            <span class="time">距結束<span class="black-tag hour">01</span>時<span class="black-tag min">26</span>分<span class="black-tag second">30</span>秒</span>
+        </div>
+        <div class="selling red">
+            <span>###campaignFeature1###</span>
+            <span>###campaignFeature2###</span>
+            <span>###campaignFeature3###</span>
+        </div>
+        <div class="product-detail">
+            <ul class="main-tab clearfix" id="tab">
+                <li><a href="javascript:void(0);" class="active">商品詳情</a></li>
+                <li><a href="javascript:void(0);" id="tabHelp">商品參數</a></li>
+                <li><a href="javascript:void(0);" id="tabHelp">評價<span class="gray">(2166)</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="product-comment float-tab-target" id="productComment">
+        <div class="title">客戶評價<i class="num">（2166）</i></div>
+        <div id="pingjia" class="pingjia">
+            <ul class="allpj" id="allpj">
+                <li class="le" >
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">趙***</span>
+                        <img class="lj" src="../src/images/man_01.png">
+                    </div>
+                    <section class="l">東西收到了！老婆很喜歡！
+                    </section>
+                </li>
+                <li class="ri" >
+                    <section class="r">抱著試壹試的心態買了壹件，感覺還 挺好的，做工精細，質量還可以！
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                        <span class="touxiang">李***</span>
+                        <img class="lj" src="../src/images/woman_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">秦***</span>
+                        <img class="lj" src="../src/images/woman_02.png">
+                    </div>
+                    <section class="l">款式還可以，性價比較高，值得購買！
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">物流超級給力，貨不錯，漂亮！應該是 正品，特別棒，特別喜歡，質量也不錯 很好很滿意！
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">王***</span>
+                        <img class="lj" src="../src/images/woman_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">李***</span>
+                        <img class="lj" src="../src/images/woman_02.png">
+                    </div>
+                    <section class="l">物美價廉，非常棒的一次購物體驗，下次還來~！
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">寶貝收到了，質量很好，很滿意，賣家服務特好，以後還會光顧
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">王***</span>
+                        <img class="lj" src="../src/images/woman_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">賀***</span>
+                        <img class="lj" src="../src/images/woman_02.png">
+                    </div>
+                    <section class="l">東東收到了！物流也很快，沒想到性價比這麽高！
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">
+                    給朋友送的。他說還可以，物流很快，以後會再次光臨！
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">趙***</span>
+                        <img class="lj" src="../src/images/man_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">賀***</span>
+                        <img class="lj" src="../src/images/woman_01.png">
+                    </div>
+                    <section class="l">寶貝比想象中的好，物超所值，物流小哥很熱情，棒棒噠~
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">
+                    很不錯的購物體驗，東西很喜歡，和宣傳的壹樣，好評！
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">王***</span>
+                        <img class="lj" src="../src/images/man_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">劉***</span>
+                        <img class="lj" src="../src/images/woman_02.png">
+                    </div>
+                    <section class="l">剛開始地址填錯了，買家客服很耐心的解決問題，也沒等太久，還好最終收到貨物，好開心
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">
+                        東西收到了，物美價廉，準備再買一個~
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">周***</span>
+                        <img class="lj" src="../src/images/man_01.png">
+                    </div>
+                </li>
+                <li class="le">
+                    <div class="img-wrap" style="margin-right:.5rem;">
+                        <span class="touxiang">秦***</span>
+                        <img class="lj" src="../src/images/woman_02.png">
+                    </div>
+                    <section class="l">寶貝很漂亮，跟圖片上一樣，贊
+                    </section>
+                </li>
+                <li class="ri">
+                    <section class="r">
+                        質量很不錯，一次買了好幾個，期待新品
+                    </section>
+                    <div class="img-wrap" style="margin-left:.5rem;">
+                         <span class="touxiang">孫***</span>
+                        <img class="lj" src="../src/images/man_01.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="info">
+        <div class="red title">貨到付款，先驗貨，再付款！</div>
+        <div class="subtitle">如果有任何質量問題及任何不滿,無憂退貨！我們不售假貨！7天無理由退貨！</div>
+        <div class="tips">
+            <p class="line">溫馨提示:支持貨到付款+七天無理由退貨+48小時內發貨！</p>
+            <p class="line">如果您有任何問題請及時聯系我們！</p>
+            <p class="line red">郵箱：support@martdealer.com</p>
+            <p class="line red">電話：+86 029-88248317 to 815</p>
+            <p class="line red">官網：www.martdealer.com</p>
+            <p class="line red">Skype：support@martdealer.com</p>
+            <p class="line red">Line：martdealer.com</p>
+            <p class="line">聯系我們時請附上您的姓名和聯系方式以便我們及時與您的問題，祝您購物愉快！</p>
+        </div>
+    </section>
+    <div id="data">
+{
+    "campaignCreateTime": 1497353075,
+    "campaignCurrency": "CNY",
+    "campaignFeature1": "11111111",
+    "campaignFeature2": "",
+    "campaignFeature3": "",
+    "campaignId": 73,
+    "campaignName": "111111111",
+    "campaignPagePath": "http://www.yeahlp.com/7DUF73/index.html",
+    "campaignPagePathName": "7DUF73",
+    "campaignPageVersion": "170621153811",
+    "campaignStatus": 3,
+    "ownerId": 3,
+    "campaignTrackList": [
+        {
+            "campaignId": 73,
+            "campaignTrackCode": "2324",
+            "campaignTrackCreateTime": 1497437287,
+            "campaignTrackId": 1,
+            "campaignTrackStatus": 0,
+            "campaignTrackType": 0
+        },
+        {
+            "campaignId": 73,
+            "campaignTrackCode": "test",
+            "campaignTrackCreateTime": 1497438611,
+            "campaignTrackId": 2,
+            "campaignTrackStatus": 0,
+            "campaignTrackType": 1
+        },
+        {
+            "campaignId": 73,
+            "campaignTrackCode": "sfx",
+            "campaignTrackCreateTime": 1497515617,
+            "campaignTrackId": 3,
+            "campaignTrackStatus": 0,
+            "campaignTrackType": 0
+        },
+        {
+            "campaignId": 73,
+            "campaignTrackCode": "12354",
+            "campaignTrackCreateTime": 1497515814,
+            "campaignTrackId": 4,
+            "campaignTrackStatus": 0,
+            "campaignTrackType": 1
+        }
+    ],
+    "campaignUpdateTime": 1498030730,
+    "product": {
+        "productAttributeList": [
+            {
+                "productAttributeId": 19,
+                "productAttributeName": "颜色",
+                "productSn": "P1496820469095"
+            },
+            {
+                "productAttributeId": 20,
+                "productAttributeName": "尺码",
+                "productSn": "P1496820469095"
+            }
+        ],
+        "productAttributeValueList": [
+            {
+                "productAttributeId": 19,
+                "productAttributeValue": "粉色",
+                "productAttributeValueId": 43,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productAttributeId": 19,
+                "productAttributeValue": "灰色",
+                "productAttributeValueId": 44,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productAttributeId": 20,
+                "productAttributeValue": "M",
+                "productAttributeValueId": 45,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productAttributeId": 20,
+                "productAttributeValue": "L",
+                "productAttributeValueId": 46,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productAttributeId": 20,
+                "productAttributeValue": "XL",
+                "productAttributeValueId": 47,
+                "productSn": "P1496820469095"
+            }
+        ],
+        "productCreateTime": 1498031240,
+        "productDesc": "",
+        "productId": 10,
+        "productMainImageS3": "http://www.yeahlp.com/image/20170607/3541c3d404a343f881c1fe1f5a09e24e.jpg",
+        "productName": "2017夏季新款欧美女装刺绣大码桑蚕丝中长裙显瘦真丝短袖连衣裙",
+        "productParam": "",
+        "productShowImageList": [
+            {
+                "productImageOrder": 0,
+                "productImageS3Url": "http://www.yeahlp.com/image/20170607/c4a5fe31589e4eb0bd09b45be49c5b02.jpg"
+            },
+            {
+                "productImageOrder": 1,
+                "productImageS3Url": "http://www.yeahlp.com/image/20170607/3541c3d404a343f881c1fe1f5a09e24e.jpg"
+            },
+            {
+                "productImageOrder": 2,
+                "productImageS3Url": "http://www.yeahlp.com/image/20170607/1908fdf43f604d1faecbf883cff7d35e.jpg"
+            },
+            {
+                "productImageOrder": 3,
+                "productImageS3Url": "http://www.yeahlp.com/image/20170607/a6f2f9702483489cb989ebc8381aa985.jpg"
+            },
+            {
+                "productImageOrder": 4,
+                "productImageS3Url": "http://www.yeahlp.com/image/20170607/06aeec79e8214d3188de376406a074ef.jpg"
+            }
+        ],
+        "productSkuList": [
+            {
+                "productSku": "548995010858-粉色-M",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "M",
+                        "productSkuAttributeValueId": 91,
+                        "productSkuId": 37,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "粉色",
+                        "productSkuAttributeValueId": 92,
+                        "productSkuId": 37,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 37,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/3541c3d404a343f881c1fe1f5a09e24e.jpg",
+                "productSkuInventory": 21,
+                "productSkuOriginalPrice": 345,
+                "productSkuPrice": 67,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productSku": "548995010858-粉色-L",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "L",
+                        "productSkuAttributeValueId": 93,
+                        "productSkuId": 38,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "粉色",
+                        "productSkuAttributeValueId": 94,
+                        "productSkuId": 38,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 38,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/3541c3d404a343f881c1fe1f5a09e24e.jpg",
+                "productSkuInventory": 9,
+                "productSkuOriginalPrice": 56,
+                "productSkuPrice": 56,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productSku": "548995010858-粉色-XL",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "XL",
+                        "productSkuAttributeValueId": 95,
+                        "productSkuId": 39,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "粉色",
+                        "productSkuAttributeValueId": 96,
+                        "productSkuId": 39,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 39,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/3541c3d404a343f881c1fe1f5a09e24e.jpg",
+                "productSkuInventory": 12,
+                "productSkuOriginalPrice": 78,
+                "productSkuPrice": 7,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productSku": "548995010858-灰色-M",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "M",
+                        "productSkuAttributeValueId": 97,
+                        "productSkuId": 40,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "灰色",
+                        "productSkuAttributeValueId": 98,
+                        "productSkuId": 40,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 40,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/1908fdf43f604d1faecbf883cff7d35e.jpg",
+                "productSkuInventory": 42,
+                "productSkuOriginalPrice": 75,
+                "productSkuPrice": 234,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productSku": "548995010858-灰色-L",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "L",
+                        "productSkuAttributeValueId": 99,
+                        "productSkuId": 41,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "灰色",
+                        "productSkuAttributeValueId": 100,
+                        "productSkuId": 41,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 41,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/1908fdf43f604d1faecbf883cff7d35e.jpg",
+                "productSkuInventory": 36,
+                "productSkuOriginalPrice": 6,
+                "productSkuPrice": 345,
+                "productSn": "P1496820469095"
+            },
+            {
+                "productSku": "548995010858-灰色-XL",
+                "productSkuAttributeValueList": [
+                    {
+                        "productAttributeId": 20,
+                        "productSkuAttributeName": "尺码",
+                        "productSkuAttributeValue": "XL",
+                        "productSkuAttributeValueId": 101,
+                        "productSkuId": 42,
+                        "productSn": "P1496820469095"
+                    },
+                    {
+                        "productAttributeId": 19,
+                        "productSkuAttributeName": "颜色",
+                        "productSkuAttributeValue": "灰色",
+                        "productSkuAttributeValueId": 102,
+                        "productSkuId": 42,
+                        "productSn": "P1496820469095"
+                    }
+                ],
+                "productSkuCurrency": "CNY",
+                "productSkuId": 42,
+                "productSkuImageS3": "http://www.yeahlp.com/image/20170607/1908fdf43f604d1faecbf883cff7d35e.jpg",
+                "productSkuInventory": 45,
+                "productSkuOriginalPrice": 967,
+                "productSkuPrice": 1321,
+                "productSn": "P1496820469095"
+            }
+        ],
+        "productSn": "P1496820469095",
+        "productUpdateTime": 1498031241
+    },
+    "productSn": "P1496820469095",
+    "templateId": 10
+}
+    </div>
+    <div class="alert"></div>
+    <div class="order-btn" id="order">立即購買</div>
+    <div style="position: fixed;left: 80%;bottom: 12%;z-index:9999;display:none;" id="backToTop">
+        <a href="javascript:scroll(0,0)"><img src="../src/images/backToTop.png" alt=""></a>
+    </div>
+</div>
+<div id="test"> </div>
+<script type="text/template" id="testTpl">
+测试underscore
+    <%
+    var d = ['un','der','score']
+    for(var i=0;i<d.length;i++){
+        console.log(d[i])
+    }
+    %>
+</script>
+<script type="text/javascript" src="../lib/require.js" data-main="../src/js/index" ></script>
+</body>
+</html>

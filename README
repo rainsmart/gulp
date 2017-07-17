@@ -1,0 +1,7 @@
+﻿1.css 用less 模块化
+2.html用@@include引入
+3.dist中文件为最终打包文件
+4.lib中文件为插件文件
+5.用livereload插件实现自动刷新
+6.src->js 此目录下的文件为入口文件
+见demo html->index.html
