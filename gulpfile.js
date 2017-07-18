@@ -73,10 +73,10 @@ gulp.task('copy',  function() {
 });
 
 gulp.task('watch',function(){
-	gulp.watch(['./src/js/**/*.js','./src/js/*.js'],['scripts'])
-	gulp.watch('./src/css/**/*.less',['less'])
-	gulp.watch('./src/images/**',['images'])
-	gulp.watch(['./html/*.html','./html/**/*.html'],['html'])
+	gulp.watch(['src/js/**/*.js','./src/js/*.js'],['scripts'])
+	gulp.watch('src/css/**/*.less',['less'])
+	gulp.watch('src/images/**',['images'])
+	gulp.watch(['html/*.html','html/**/*.html'],['html'])
 });
 
 gulp.task('default',['webserver','clean'],function(){
