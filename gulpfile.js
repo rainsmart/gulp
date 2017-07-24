@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var minifycss = require('gulp-minify-css');
+var minifycss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var imagemin = require('gulp-imagemin');
@@ -13,6 +13,7 @@ var sourcemaps = require('gulp-sourcemaps'); //便于压缩后代码调试
 var replace = require('gulp-replace');
 var amdOptimize = require("amd-optimize");//require 优化
 var requirejsOptimize = require('gulp-requirejs-optimize');
+var plumber = require('gulp-plumber');//解决less报错不再编译问题
 //本地服务器
 gulp.task('webserver', function () {
 	connect.server({
@@ -23,6 +24,7 @@ gulp.task('webserver', function () {
 // less 文件
 gulp.task('less', function(){
     return gulp.src('./src/css/less/*-page.less')
+        .pipe(plumber())
         .pipe(sourcemaps.init())//sourcemaps
         .pipe(less())//编译less
         .pipe(sourcemaps.write())

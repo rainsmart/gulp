@@ -20,6 +20,7 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-less": "^3.3.2",
     "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
     "gulp-replace": "^0.6.1",
     "gulp-requirejs-optimize": "^1.2.0",
     "gulp-rev-collector": "^1.2.2",
